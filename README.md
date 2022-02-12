@@ -1,5 +1,7 @@
 # Generative Pre-trained Transformer 3 (GPT3)
 
+<img src="./src/assets/app-screen.png" alt="GPT3-FZTC" width="800" />
+
 ## Available Scripts
 
 In the project directory, you can run:
