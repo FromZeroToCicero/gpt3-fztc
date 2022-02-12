@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterHeading>
-        <Header>Do you want to step into the future before others?</Header>
+        <Header>Do you want to step into the <br /> future before others?</Header>
       </FooterHeading>
       <FooterButtonContainer>
         <p>Request Early Access</p>
@@ -25,7 +25,7 @@ const Footer = () => {
       <FooterContent>
         <FooterLogoContainer>
           <FooterLogo src={gpt3Logo} alt="GPT3 logo" />
-          <p>Crechterwood K12 182 DK Alknjkcb, All Rights Reserved</p>
+          <p>Crechterwood K12 182 DK Alknjkcb, <br /> All Rights Reserved</p>
         </FooterLogoContainer>
         <FooterLinksContainer>
           <h4>Links</h4>

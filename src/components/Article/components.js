@@ -41,7 +41,6 @@ export const ArticleContent = styled.div`
     line-height: 30px;
     color: #fff;
     margin-bottom: 5rem;
-    cursor: pointer;
 
     @media screen and (max-width: 550px) {
       font-size: 18px;
@@ -50,6 +49,8 @@ export const ArticleContent = styled.div`
   }
 
   p:last-child {
-    cursor: pointer;
+    span {
+      cursor: pointer;
+    }
   }
 `;

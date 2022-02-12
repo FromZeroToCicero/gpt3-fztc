@@ -69,7 +69,7 @@ export const HeaderInput = styled.div`
 export const EmailInput = styled.input`
   flex: 2;
   width: 100%;
-  min-height: 50px;
+  min-height: 65px;
   background: var(--color-footer);
   color: #fff;
   border: 2px solid var(--color-footer);
@@ -84,6 +84,7 @@ export const EmailInput = styled.input`
   @media screen and (max-width: 650px) {
     font-size: 16px;
     line-height: 24px;
+    min-height: 50px;
   }
 
   @media screen and (max-width: 490px) {
@@ -95,7 +96,7 @@ export const EmailInput = styled.input`
 export const EmailButton = styled.button`
   flex: 0.6;
   width: 100%;
-  min-height: 50px;
+  min-height: 65px;
   background: #ff4820;
   font-family: var(--font-family);
   font-weight: bold;
@@ -112,6 +113,7 @@ export const EmailButton = styled.button`
   @media screen and (max-width: 650px) {
     font-size: 16px;
     line-height: 24px;
+    min-height: 50px;
   }
 
   @media screen and (max-width: 490px) {

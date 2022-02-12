@@ -55,33 +55,35 @@ export const SignInContainer = styled.div`
 export const NavLink = styled.a`
   color: #fff;
   font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-  text-transform: capitalise;
-  margin: 0 1rem;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 1.5rem;
   cursor: pointer;
+
+  @media screen and (max-width: 1100px) {
+    margin: 0 0.8rem;
+  }
 `;
 
 export const SignInText = styled.p`
   color: #fff;
   font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-  text-transform: capitalise;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
   margin: 0 1rem;
   cursor: pointer;
 `;
 
 export const SignInButton = styled.button`
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 2.2rem;
   color: #fff;
   background: #ff4820;
   font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -107,6 +109,10 @@ export const MenuLinks = styled(NavLinksContainer)`
 
   a {
     font-size: 16px;
+  }
+
+  .nav-links {
+    margin: 0.3em 0.5em;
   }
 
   @media screen and (max-width: 1050px) {
@@ -135,7 +141,7 @@ export const MenuContainer = styled.div`
   animation: ${scaleUpCenter} 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 
   p {
-    margin: 1rem 0;
+    margin: 1rem 0.5rem;
   }
 
   @media screen and (max-width: 550px) {

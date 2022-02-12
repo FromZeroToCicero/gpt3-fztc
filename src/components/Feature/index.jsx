@@ -5,7 +5,7 @@ import { FeatureContainer, FeatureTitle, FeatureText } from "./components";
 const Feature = ({ title, text }) => {
   return (
     <FeatureContainer className="gpt3__features-container__feature">
-      <FeatureTitle>
+      <FeatureTitle className="gpt3__features-container__feature-title">
         <div />
         <h1>{title}</h1>
       </FeatureTitle>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
 import Gpt3Logo from "../../assets/logo.svg";
@@ -18,20 +18,49 @@ import {
   MenuSignInContainer,
 } from "./components";
 
-const Menu = () => {
+const Menu = ({ onClick }) => {
   return (
     <>
-      <NavLink href="#home">Home</NavLink>
-      <NavLink href="#whatgpt3">What is GPT3?</NavLink>
-      <NavLink href="#possibility">Open AI</NavLink>
-      <NavLink href="#features">Case Studies</NavLink>
-      <NavLink href="#blog">Library</NavLink>
+      <NavLink className="nav-links" href="#home" onClick={onClick}>
+        Home
+      </NavLink>
+      <NavLink className="nav-links" href="#whatgpt3" onClick={onClick}>
+        What is GPT3?
+      </NavLink>
+      <NavLink className="nav-links" href="#possibility" onClick={onClick}>
+        Open AI
+      </NavLink>
+      <NavLink className="nav-links" href="#features" onClick={onClick}>
+        Case Studies
+      </NavLink>
+      <NavLink className="nav-links" href="#blog" onClick={onClick}>
+        Library
+      </NavLink>
     </>
   );
 };
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const navbar = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutsideNavbar = (event) => {
+      if (
+        navbar &&
+        toggleMenu &&
+        !navbar.current.contains(event.target)
+      ) {
+        setToggleMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutsideNavbar);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutsideNavbar);
+    };
+  }, [setToggleMenu, toggleMenu]);
 
   return (
     <NavContainer>
@@ -62,9 +91,9 @@ const Navbar = () => {
           />
         )}
         {toggleMenu && (
-          <MenuContainer>
+          <MenuContainer ref={navbar}>
             <MenuLinks>
-              <Menu />
+              <Menu onClick={() => setToggleMenu(false)} />
             </MenuLinks>
             <MenuSignInContainer>
               <SignInText>Sign in</SignInText>

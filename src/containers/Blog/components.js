@@ -3,15 +3,20 @@ import styled from "styled-components";
 import { Section, GradientText } from "../../components/shared";
 
 export const BlogContainer = styled(Section)`
+  padding-bottom: 8em;
   margin: 0;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 550px) {
+    padding-bottom: 4em;
+  }
 `;
 
 export const BlogHeading = styled.div`
   width: 100%;
   text-align: left;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 `;
 
 export const Header = styled(GradientText)`

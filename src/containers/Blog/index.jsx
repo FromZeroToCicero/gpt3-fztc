@@ -15,7 +15,7 @@ const Blog = () => {
   return (
     <BlogContainer id="blog">
       <BlogHeading>
-        <Header>A lot is happening, We are blogging about it.</Header>
+        <Header>A lot is happening, <br /> We are blogging about it.</Header>
       </BlogHeading>
       <BlogContent>
         <BlogContentGroupA>

@@ -1,14 +1,23 @@
 import styled from "styled-components";
 
-import { Section, GradientText } from "../../components/shared";
+import { GradientText } from "../../components/shared";
 
-export const FooterContainer = styled(Section)`
+export const FooterContainer = styled.div`
+  padding: 9rem 6rem 2rem;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--color-footer);
+
+  @media screen and (max-width: 700px) {
+    padding: 4rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    padding: 4rem 2rem;
+  }
 `;
 
 export const FooterHeading = styled.div`
@@ -20,12 +29,12 @@ export const FooterHeading = styled.div`
 export const Header = styled(GradientText)`
   font-family: var(--font-family);
   font-weight: 800;
-  font-size: 62px;
+  font-size: 58px;
   line-height: 75px;
   text-align: center;
   letter-spacing: -0.04em;
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 920px) {
     font-size: 44px;
     line-height: 50px;
   }
@@ -54,7 +63,7 @@ export const FooterButtonContainer = styled.div`
   p {
     box-sizing: border-box;
     font-family: var(--font-family);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
     color: #fff;
     word-spacing: 2px;
@@ -63,6 +72,10 @@ export const FooterButtonContainer = styled.div`
       font-size: 14px;
       line-height: 20px;
     }
+  }
+
+  @media screen and (max-width: 550px) {
+    margin-bottom: 4rem;
   }
 `;
 
@@ -74,6 +87,12 @@ export const FooterContent = styled.div`
   flex-direction: row;
   width: 100%;
   text-align: left;
+
+  @media screen and (max-width: 755px) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const FooterLogoContainer = styled.div`
@@ -84,9 +103,13 @@ export const FooterLogoContainer = styled.div`
 
   p {
     font-family: var(--font-family);
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
     color: #fff;
+  }
+
+  @media screen and (max-width: 755px) {
+    align-items: center;
   }
 
   @media screen and (max-width: 550px) {
@@ -98,6 +121,10 @@ export const FooterLogo = styled.img`
   width: 118px;
   height: 30px;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 550px) {
+    width: 90px;
+  }
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -109,28 +136,34 @@ export const FooterLinksContainer = styled.div`
 
   h4 {
     font-family: var(--font-family);
-    font-size: 14px;
+    font-size: 16px;
     line-height: 16px;
     color: #fff;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   p {
     font-family: var(--font-family);
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
     color: #fff;
     cursor: pointer;
-    margin: 0.5rem 0;
+    margin: 0.8rem 0;
   }
 
   @media screen and (max-width: 550px) {
     margin: 1rem 0;
   }
+
+  &:last-child {
+    p {
+      cursor: initial;
+    }
+  }
 `;
 
 export const FooterCopyright = styled.div`
-  margin-top: 2rem;
+  margin-top: 3rem;
   text-align: center;
   width: 100%;
 

@@ -33,7 +33,7 @@ export const PossibilityContent = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
 
   h4 {

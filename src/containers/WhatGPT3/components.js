@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Section, GradientText } from "../../components/shared";
 
 export const WhatGPT3Container = styled(Section)`
-  padding: 2rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   background: var(--color-footer);
@@ -49,6 +49,10 @@ export const WhatGPT3Container = styled(Section)`
   );
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  @media screen and (max-width: 550px) {
+    padding: 3rem 2rem;
+  }
 `;
 
 export const WhatGPT3Feature = styled.div`
@@ -58,7 +62,7 @@ export const WhatGPT3Feature = styled.div`
     margin: 0;
   }
 
-  .gpt3__features-container_feature-text {
+  .gpt3__features-container__feature-text {
     max-width: 700px;
   }
 
@@ -67,8 +71,8 @@ export const WhatGPT3Feature = styled.div`
       flex-direction: column;
     }
 
-    .gpt3__features-container_feature-text {
-      margin-top: 0.5rem;
+    .gpt3__features-container__feature-text {
+      margin-top: 1rem;
     }
   }
 
@@ -116,7 +120,7 @@ export const Text = styled.p`
   cursor: pointer;
 
   @media screen and (max-width: 850px) {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 `;
 
@@ -128,7 +132,7 @@ export const WhatGPT3Content = styled.div`
 
   .gpt3__features-container__feature {
     flex: 1;
-    margin: 1rem;
+    margin: 1rem 0;
     min-width: 210px;
     display: unset;
     flex-direction: column;
@@ -136,5 +140,15 @@ export const WhatGPT3Content = styled.div`
 
   .gpt3__features-container__feature-text {
     margin-top: 0.5rem;
+  }
+
+  .gpt3__features-container__feature-title {
+    h1 {
+      margin-bottom: 2em;
+
+      @media screen and (max-width: 650px) {
+        margin-bottom: 1em;
+      }
+    }
   }
 `;

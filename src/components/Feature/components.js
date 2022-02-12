@@ -21,7 +21,7 @@ export const FeatureTitle = styled.div`
   h1 {
     font-family: var(--font-family);
     font-weight: 800;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 24px;
     letter-spacing: -0.04em;
     color: #fff;
@@ -37,7 +37,7 @@ export const FeatureTitle = styled.div`
     height: 3px;
     background: var(--gradient-bar);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.75rem;
   }
 `;
 
@@ -52,6 +52,7 @@ export const FeatureText = styled.div`
     font-size: 14px;
     line-height: 24px;
     color: var(--color-text);
+    margin-right: 0.5rem;
 
     @media screen and (max-width: 550px) {
       font-size: 12px;

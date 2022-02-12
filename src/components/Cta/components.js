@@ -8,9 +8,9 @@ export const CtaContainer = styled.div`
   padding: 2rem;
   margin: 4rem;
   border-radius: 1rem;
-  background: var(--gradient-bar);
+  background: var(--gradient-text);
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 1055px) {
     flex-direction: column;
   }
 
@@ -47,6 +47,10 @@ export const CtaButtonContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-left: 2rem;
+
+  @media screen and (max-width: 1055px) {
+    margin: 0;
+  }
 `;
 
 export const CtaButton = styled.button`
@@ -54,16 +58,16 @@ export const CtaButton = styled.button`
   color: #ffffff;
   border-radius: 40px;
   font-family: var(--font-family);
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 30px;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 2.2rem;
   outline: none;
   border: none;
   cursor: pointer;
   min-width: 150px;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 1055px) {
     margin: 2rem 0 0;
   }
 
