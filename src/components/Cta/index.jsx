@@ -11,11 +11,11 @@ const Cta = () => {
   return (
     <CtaContainer>
       <CtaContent>
-        <p>Request Early Access to Get Started</p>
+        <p>Request early access to get started</p>
         <h3>Register today & start exploring the endless possibilities.</h3>
       </CtaContent>
       <CtaButtonContainer>
-        <CtaButton>Get Started</CtaButton>
+        <CtaButton>Get started</CtaButton>
       </CtaButtonContainer>
     </CtaContainer>
   );

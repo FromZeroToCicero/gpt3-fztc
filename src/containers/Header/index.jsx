@@ -18,16 +18,16 @@ const Header = () => {
   return (
     <HeaderContainer id="home">
       <HeaderContent>
-        <HeaderText>Let's Build Something amazing with GPT-3 OpenAI</HeaderText>
+        <HeaderText>Let's build something amazing with GPT-3 OpenAI</HeaderText>
         <HeaderDescription>
-          Yet bed any for travelling assistance indulgence unpleasing. Not
-          thoughts all exercise blessing. Indulgence way everything joy
-          alteration boisterous the attachment. Party we years to order allow
-          asked of.
+          Third-generation language prediction model in the GPT-n series (and
+          the successor to GPT-2) created by OpenAI, a San Francisco-based
+          artificial intelligence research laboratory. GPT-3's full version has
+          a capacity of 175 billion machine learning parameters.
         </HeaderDescription>
         <HeaderInput>
-          <EmailInput type="email" placeholder="Your Email Address" />
-          <EmailButton type="button">Get Started</EmailButton>
+          <EmailInput type="email" placeholder="Your email address" />
+          <EmailButton type="button">Get started</EmailButton>
         </HeaderInput>
         <PeopleContent>
           <img src={PeopleImage} alt="People registered" />

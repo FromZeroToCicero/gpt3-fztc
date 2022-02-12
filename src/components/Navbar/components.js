@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 import { scaleUpCenter } from "../shared";
 
@@ -52,7 +53,7 @@ export const SignInContainer = styled.div`
   }
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   color: #fff;
   font-family: var(--font-family);
   font-weight: 300;

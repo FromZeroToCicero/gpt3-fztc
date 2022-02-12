@@ -16,7 +16,7 @@ const Possibility = () => {
         <img src={PossibilityImg} alt="Possibility logo" />
       </PossibilityImage>
       <PossibilityContent>
-        <h4>Request Early Access to Get Started</h4>
+        <h4>Request early access to get started</h4>
         <Header>The possibilities are beyond your imagination</Header>
         <Description>
           Yet bed any for travelling assistance indulgence unpleasing. Not
@@ -24,7 +24,7 @@ const Possibility = () => {
           alteration boisterous the attachment. Party we years to order allow
           asked of.
         </Description>
-        <h4>Request Early Access to Get Started</h4>
+        <h4>Request early access to get started</h4>
       </PossibilityContent>
     </PossibilityContainer>
   );

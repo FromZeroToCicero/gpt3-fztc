@@ -6,7 +6,7 @@ import {
   FeaturesHeading,
   Heading,
   Description,
-  FeaturesWrapper
+  FeaturesWrapper,
 } from "./components";
 
 const featuresData = [
@@ -33,10 +33,10 @@ const Features = () => {
     <FeaturesContainer id="features">
       <FeaturesHeading>
         <Heading>
-          The Future is now and You Just Need To Realize It. Step into the
-          Future Today & Make it Happen.
+          The future is now and you just need to realize it. Step into the
+          future today & make it happen.
         </Heading>
-        <Description>Request early Access to Get Started</Description>
+        <Description>Request early access to get started</Description>
       </FeaturesHeading>
       <FeaturesWrapper>
         {featuresData.map((item, index) => (

@@ -21,19 +21,50 @@ import {
 const Menu = ({ onClick }) => {
   return (
     <>
-      <NavLink className="nav-links" href="#home" onClick={onClick}>
+      <NavLink
+        to="home"
+        spy={true}
+        duration={500}
+        className="nav-links"
+        onClick={onClick}
+      >
         Home
       </NavLink>
-      <NavLink className="nav-links" href="#whatgpt3" onClick={onClick}>
+      <NavLink
+        to="whatgpt3"
+        spy={true}
+        offset={-50}
+        duration={500}
+        className="nav-links"
+        onClick={onClick}
+      >
         What is GPT3?
       </NavLink>
-      <NavLink className="nav-links" href="#possibility" onClick={onClick}>
+      <NavLink
+        to="possibility"
+        spy={true}
+        duration={500}
+        className="nav-links"
+        onClick={onClick}
+      >
         Open AI
       </NavLink>
-      <NavLink className="nav-links" href="#features" onClick={onClick}>
-        Case Studies
+      <NavLink
+        to="features"
+        spy={true}
+        duration={500}
+        className="nav-links"
+        onClick={onClick}
+      >
+        Case studies
       </NavLink>
-      <NavLink className="nav-links" href="#blog" onClick={onClick}>
+      <NavLink
+        to="blog"
+        spy={true}
+        duration={500}
+        className="nav-links"
+        onClick={onClick}
+      >
         Library
       </NavLink>
     </>
@@ -46,11 +77,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutsideNavbar = (event) => {
-      if (
-        navbar &&
-        toggleMenu &&
-        !navbar.current.contains(event.target)
-      ) {
+      if (navbar && toggleMenu && !navbar.current.contains(event.target)) {
         setToggleMenu(false);
       }
     };
