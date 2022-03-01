@@ -2,6 +2,8 @@
 
 <img src="./src/assets/app-screen.png" alt="GPT3-FZTC" width="800" />
 
+## Website is available [here](https://gpt3-fztc.vercel.app/).
+
 ## Available Scripts
 
 In the project directory, you can run:
